@@ -1,0 +1,229 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Seguros AXA</title>
+
+<style type="text/css">
+body{
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif; 
+	font-size:12px;
+}
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+
+.myform{
+	margin:0 auto;
+	width:400px;
+	padding:14px;
+}
+
+	#basic{
+		border:solid 2px #DEDEDE;	
+	}
+	#basic h1 {
+		font-size:14px;
+		font-weight:bold;
+		margin-bottom:8px;
+	}
+	#basic p{
+		font-size:11px;
+		color:#666666;
+		margin-bottom:20px;
+		border-bottom:solid 1px #dedede;
+		padding-bottom:10px;
+	}
+	#basic label{
+		display:block;
+		font-weight:bold;
+		text-align:right;
+		width:140px;
+		float:left;
+	}
+	#basic .small{
+		color:#666666;
+		display:block;
+		font-size:11px;
+		font-weight:normal;
+		text-align:right;
+		width:140px;
+	}
+	#basic input{
+		float:left;
+		width:200px;
+		margin:2px 0 30px 10px;
+	}
+	#basic button{ 
+		clear:both;
+		margin-left:150px;
+		background:#888888;
+		color:#FFFFFF;
+		border:solid 1px #666666;
+		font-size:11px;
+		font-weight:bold;
+		padding:4px 6px;
+	}
+
+
+	/* ----------- stylized ----------- */
+	#stylized{
+		border:solid 2px #b7ddf2;
+		background:#ebf4fb;
+
+	}
+	#stylized h1 {
+		font-size:14px;
+		font-weight:bold;
+		margin-bottom:8px;
+	}
+	#stylized p{
+		font-size:11px;
+		color:#666666;
+		margin-bottom:20px;
+		border-bottom:solid 1px #b7ddf2;
+		padding-bottom:10px;
+	}
+	#stylized label{
+		display:block;
+		font-weight:bold;
+		text-align:right;
+		width:140px;
+		float:left;
+	}
+	#stylized .small{
+		color:#666666;
+		display:block;
+		font-size:11px;
+		font-weight:normal;
+		text-align:right;
+		width:140px;
+	}
+	#stylized input{
+		float:left;
+		font-size:12px;
+		padding:4px 2px;
+		border:solid 1px #aacfe4;
+		width:200px;
+		margin:2px 0 20px 10px;
+	}
+	#stylized button{ 
+		clear:both;
+		margin-left:160px;
+		width:125px;
+		height:31px;
+		background:#444;
+		text-align:center;
+		line-height:31px;
+		color:#FFFFFF;
+		font-size:11px;
+		font-weight:bold;
+	}
+	body {
+ 	   background-color: #90CAF9;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="stylized" class="myform">
+
+<form id="form1" id="form1" action="mail.php" method="POST">
+
+    <label>Apellido Paterno
+    </label>
+<input type="text" name="name">
+ <label>Apellido Materno
+    </label>
+<input type="text" name="name">
+ <label>Nombre(s)
+    </label>
+<input type="text" name="name">
+<label>Edad
+    </label>
+<input type="text" name="sexo">
+     <label>Sexo  
+    </label>
+<select name="sexo" size="1">
+<option value="masculino">masculino</option>
+<option value="femenino">femenino</option>
+</select>
+<br />
+<br />    
+<label>Causa de la atencion Médica  
+    </label>
+<select name="causa" size="1">
+<option value="Enfermedad">Enfermedad</option>
+<option value="Accidente">Accidente</option>
+<option value="Maternidad">Maternidad</option>
+<option value="Segunda Opinion Medica">Segunda Opinion Medica</option>
+</select>
+<br />
+<br />    
+<label>Tipo De Estancia 
+    </label>
+<select name="estancia" size="1">
+<option value="Urgencia">Urgencia</option>
+<option value="Hospitalización">Hospitalización</option>
+<option value="Corta">Corta Estancia/Ambulancia</option>
+<option value="Consultorio">Consultorio</option>
+</select>
+<br />
+<br />    
+<label>Tipo De Padecimiento 
+    </label>
+<select name="padecimiento" size="1">
+<option value="Congenito">Congenito</option>
+<option value="Adquirido">Adquirido</option>
+<option value="Agudo">Agudo</option>
+<option value="Cronico">Cronico</option>
+</select>
+<br />    
+    <!--<button type="submit" value="Send" style="margin-top:15px;">Enviar</button>-->
+</form>
+</div>
+
+<div id="stylized" class="myform">
+	<div class="spacer"></div>
+	
+    <label>Diagnostico
+        <span class="small">indicando zona afectada y si es unilateral o bilateral</span>
+    </label>
+<textarea name="diagnostico" rows="5" cols="28"></textarea>
+			
+	<div>
+		<label>Causa o etimiologia
+        <span class="small">En caso de accidente, describa cómo y cuando sucedio y el mecanismo de lesion</span>
+        
+    </label>
+    <br/>
+    <textarea name="diagnostico" rows="5" cols="28"></textarea>
+ <br/>
+    <label>Fecha de los primeros sintomas
+    </label>
+    <input type="text" name="date">
+    
+    <label>Fecha de diagnóstico
+    </label>
+    <input type="text" name="date">
+    
+    <label>Fecha de inicio del tratamiento
+    </label>
+    <input type="text" name="date">
+    
+<br/>
+<br/>
+
+	<form action="https://preview.c9users.io/happynachou/formateo-seguros/secondterm.html?_c9_id=livepreview6&_c9_host=https://ide.c9.io">
+    <input type="submit" value="Continuar" />
+</form>
+</div>
+
+<br/>
+<br/>
+<div class="spacer"></div>
+
+</body>
+</html>
